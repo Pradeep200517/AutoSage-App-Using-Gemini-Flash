@@ -1,0 +1,83 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #D0C4DB, #111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 350px;
+}
+
+/* App Name */
+.app-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Heading (Login) */
+.underline {
+    font-size: 22px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Login Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #F5EFFF;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #d6c9e8;
+}
+
+/* Sign-in & Guest Links */
+p {
+    margin-top: 10px;
+}
+
+p a {
+    color: #FFB22C;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

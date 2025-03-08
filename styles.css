@@ -1,0 +1,129 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Gradient */
+body {
+    background: linear-gradient(to bottom, #D0C4DB, #111);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    height: 50px;  /* Reduced height */
+}
+.globe-icon {
+    font-size: 18px; /* Adjust size as needed */
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #854836;
+}
+
+/* Navbar Items */
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Dropdown for Language */
+.dropdown {
+    position: relative;
+}
+
+.globe-icon {
+    font-size: 18px; /* Adjust size as needed */
+    font-weight:normal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+    content: "🌏 Language"; /* Unicode Globe + Text */
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    top: 25px;
+    right: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: #ddd;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #F5EFFF;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Search Box */
+.search-box {
+    padding: 6px 10px;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.content h1 {
+    font-size: 6rem; /* Increased heading size */
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 3rem; /* Increased paragraph size */
+    margin-top: 10px;
+}
